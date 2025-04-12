@@ -1,0 +1,125 @@
+/* Import Google Font for Bengali support */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Hind Siliguri', Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4a6bdf;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4a6bdf;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4a6bdf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #3a5bd9;
+    transform: translateY(-2px);
+}
+
+/* Profile Section */
+.about-section {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #4a6bdf;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+    flex: 1;
+}
+
+.bio h2 {
+    color: #4a6bdf;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+/* Skills Section */
+.skills {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.skills h3 {
+    color: #4a6bdf;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Effects */
+.profile-img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    animation: fadeIn 0.8s ease-out;
+}
